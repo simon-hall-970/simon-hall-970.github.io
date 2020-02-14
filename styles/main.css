@@ -161,3 +161,23 @@ h2{
     top: 481px;
     left: 461px;
 }
+h3{
+    font-family: Calibri;
+    font-size: 4.61em;
+    font-weight: 100;
+    transform: scale(1.80,1);
+}
+.personal{
+    display: hidden;
+    position: absolute;
+    top: 246px;
+    left: 294px;
+    color: #dddd1f;
+}
+.technical{
+    display: hidden;
+    position: absolute;
+    top: 176px;
+    left: 292px;
+    color: #5f3380;
+}
