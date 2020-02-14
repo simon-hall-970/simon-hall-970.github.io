@@ -43,6 +43,14 @@ body{
     width: 116px;
     background-color: #762dad;
     border-radius: 50%;
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 2.6s;
+     animation-duration: 2.6s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 .pers-button {
     position: absolute;
@@ -52,10 +60,122 @@ body{
     width: 116px;
     background-color: #fff200;
     border-radius: 50%;
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+    -webkit-animation-duration: 2.6s;
+     animation-duration: 2.6s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
-/*
+/*add gradient animation to tech button to grab attention
+@keyframes tech {
+    0% {height: 116px;
+        width: 116px;}
+
+    30% {height: 116px;
+        width: 116px;
+        background-color: #762dad;
+        background-image: linear-gradient(31.8deg, #762dad 0%, white 10%, #762dad 20%)
+    }
+    50% {height: 120px;
+        width: 120px;
+        background-color: #762dad;
+        background-image: linear-gradient(31.8deg, #762dad 40%, white 50%, #762dad 60%)
+    }
+    70% {height: 125px;
+        width: 125px;
+        background-color: #762dad;
+        background-image: linear-gradient(31.8deg, #762dad 80%, white 90%, #762dad 100%)
+    }
+    90% {height: 120px;
+        width: 120px;
+        background-color: #762dad;
+        background-image: linear-gradient(31.8deg, #762dad 0%, white 0%, #762dad 100%)
+    }
+    100% {height: 121px;
+        width: 121px;}
+    }
+    
+    creating the animation I wanted was taking up too much time.  But I need something to create
+    an attention grabbing effect to show the user what to do.  I downloaded the following heartbeat CSS code from:
+     * animate.css -https://daneden.github.io/animate.css/
+     * Version - 3.7.2
+    * Licensed under the MIT license - http://opensource.org/licenses/MIT
+    *
+    * Copyright (c) 2019 Daniel Eden
+    and I tweaked the timing and scale size*/
+
+    @-webkit-keyframes heartBeat {
+        50% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        57% {
+          -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+        }
+      
+        64% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        71% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      
+        85% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      
+      @keyframes heartBeat {
+        50% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        57% {
+          -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+        }
+      
+        64% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        71% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      
+        85% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+   
+.rotate{
+    transform: rotate(-31deg);
+}
+
+h2{
+    font-family: Calibri;
+    font-size: 72pt;
+    font-weight: 500;
+    transform: scale(1.5,1);
+}
 .my{
     position: absolute;
-    top: 20%;
-    left: 40%;
-}*/
+    top: -52px;
+    left: 282px;
+}
