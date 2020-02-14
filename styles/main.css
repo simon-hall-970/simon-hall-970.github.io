@@ -43,7 +43,8 @@ body{
     width: 116px;
     background-color: #762dad;
     border-radius: 50%;
-    -webkit-animation-name: heartBeat;
+   /* comment out animnation while working and testing
+   -webkit-animation-name: heartBeat;
     animation-name: heartBeat;
     -webkit-animation-duration: 3.9s;
      animation-duration: 3.9s;
@@ -51,6 +52,7 @@ body{
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    */
 }
 .pers-button {
     position: absolute;
@@ -60,16 +62,19 @@ body{
     width: 116px;
     background-color: #fff200;
     border-radius: 50%;
+    /*comment out animation while working and testing
     -webkit-animation-name: heartBeat;
     animation-name: heartBeat;
     -webkit-animation-delay: 1.3s;
     animation-delay: 1.95s; /* delay by half duration to have the two buttons pulsing at opposite times*/
+    /*comment out animation while working and testing
     -webkit-animation-duration: 3.9s;
      animation-duration: 3.9;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    */
 }
 /*add animation to tech button to grab attention
     
@@ -138,17 +143,21 @@ body{
 
    
 .rotate{
-    transform: rotate(-31deg);
+    transform: rotate(-31.8deg);
 }
 
 h2{
     font-family: Calibri;
-    font-size: 72pt;
+    font-size: 5.15em;
     font-weight: 500;
-    transform: scale(1.5,1);
+    transform: scale(1.89,1);
 }
 .my{
     position: absolute;
-    top: -52px;
-    left: 282px;
+    top: -73px;
+    left: 224px;
+}
+.blog{position: absolute;
+    top: 481px;
+    left: 461px;
 }
