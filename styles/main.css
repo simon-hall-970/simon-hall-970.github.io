@@ -14,23 +14,24 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: #eae9e9;
-    color: black;
+    color: #6e6eaa;
     font-family: Calibri;
     font-stretch: extra-expanded;
+    overflow: hidden;
 }
 .artboard{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
     overflow: hidden;
 }
 #lg-bg{
     position: absolute;
-    top: 0
-    left: 0
-    width: 100%;
+    width: 1280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /*
 .my{
