@@ -143,9 +143,13 @@ body{
 
    
 .rotate{
+    position:absolute;
+    top: 0;
+    left: 0;
     transform: rotate(-31.8deg);
 }
 
+/* homepage text */
 h2{
     font-family: Calibri;
     font-size: 5.15em;
@@ -154,12 +158,13 @@ h2{
 }
 .my{
     position: absolute;
-    top: -73px;
-    left: 224px;
+    top: 268px;
+    left: 133px;
 }
-.blog{position: absolute;
-    top: 481px;
-    left: 461px;
+.blog{
+    position: absolute;
+    top: 814px;
+    left: 367px;
 }
 h3{
     font-family: Calibri;
@@ -168,16 +173,25 @@ h3{
     transform: scale(1.80,1);
 }
 .personal{
-    display: hidden;
     position: absolute;
-    top: 246px;
-    left: 294px;
+    top: 584px;
+    left: 204px;
     color: #dddd1f;
+    visibility: hidden;
 }
 .technical{
-    display: hidden;
     position: absolute;
-    top: 176px;
-    left: 292px;
+    top: 516px;
+    left: 204px;
     color: #5f3380;
+    visibility: hidden;
 }
+/*hover over buttons.
+    stop animation
+    display appropriate text*/
+
+    .tech-button:hover ~ .technical{
+        visibility: visible;
+    }
+    .pers-button:hover ~ .personal{
+        visibility: hidden;}
