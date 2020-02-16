@@ -39,7 +39,6 @@ p{
 [class*="col-"] {
     display: inline-block;
     padding: 12px;
-    border: solid 1px red;
   }
     /* For mobile phones: */
 .col-1 {width: 100%;}
