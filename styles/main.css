@@ -1,0 +1,206 @@
+* {
+    border: 1px solid red !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eae9e9;
+    color: #6e6eaa;
+    font-family: Calibri;
+    font-stretch: extra-expanded;
+    overflow: hidden;
+}
+.artboard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    width: 1280px;
+    height: 790px;
+}
+#lg-bg{ 
+    position: absolute;
+    width: 1280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.tech-button{
+    position: absolute;
+    top: 611px;
+    left: 613px;
+    height: 116px;
+    width: 116px;
+    background-color: #762dad;
+    border-radius: 50%;
+   -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 3.9s;
+     animation-duration: 3.9s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.pers-button {
+    position: absolute;
+    top: 610px;
+    left: -60px;
+    height: 116px;
+    width: 116px;
+    background-color: #fff200;
+    border-radius: 50%;
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.95s; /* delay by half duration to have the two buttons pulsing at opposite times*/
+    -webkit-animation-duration: 3.9s;
+     animation-duration: 3.9;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/*add animation to tech button to grab attention
+    
+    Creating the animation I wanted was taking up too much time.  But I need something to create
+    an attention grabbing effect to show the user what to do.  I downloaded the following heartbeat CSS code from:
+     * animate.css -https://daneden.github.io/animate.css/
+     * Version - 3.7.2
+    * Licensed under the MIT license - http://opensource.org/licenses/MIT
+    *
+    * Copyright (c) 2019 Daniel Eden
+    and I tweaked the timing and scale size*/
+
+    @-webkit-keyframes heartBeat {
+        66.6% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        71.2% {
+          -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+        }
+      
+        75% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        80.6% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      
+        89.3% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      
+      @keyframes heartBeat {
+        66.6% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        71.2% {
+          -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+        }
+      
+        75% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      
+        80.6% {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      
+        89.3% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+
+   
+.rotate{
+    position:absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-31.8deg);
+}
+
+/* homepage text */
+h2{
+    font-family: Calibri;
+    font-size: 5.15em;
+    font-weight: 500;
+    transform: scale(1.89,1);
+}
+.my{
+    position: absolute;
+    top: 268px;
+    left: 133px;
+}
+.blog{
+    position: absolute;
+    top: 814px;
+    left: 367px;
+}
+h3{
+    font-family: Calibri;
+    font-size: 4.61em;
+    font-weight: 100;
+    transform: scale(1.80,1);
+}
+.personal{
+    position: absolute;
+    top: -28px;
+    left: 261px;
+    color: #dddd1f;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+.technical{
+    position: absolute;
+    top: -95px;
+    left: -411px;
+    color: #5f3380;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+/*hover over buttons.
+    stop animation
+    display appropriate text*/
+
+.tech-button:hover{
+    animation: step-end;
+}
+.tech-button:hover .technical{
+    visibility: visible;
+    opacity: 100;
+}
+
+.pers-button:hover{
+    animation: step-end;
+}
+.pers-button:hover .personal{
+    visibility: visible;
+    opacity: 100;
+}

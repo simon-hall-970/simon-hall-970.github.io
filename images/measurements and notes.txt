@@ -1,0 +1,121 @@
+mockup specifications
+
+rotate -31.8%
+
+Colours: All colors in RGB format
+
+	Background grey
+	eae9e9
+
+	Green 
+	00ff00
+
+	yellow
+	fff200
+
+	blue
+	0000ff
+
+	purple
+	762dad
+
+Font colours:
+
+	my blog
+	6e6eaa
+
+	personal
+	dddd1f
+
+	technical
+	5f3380
+
+Font specs:
+
+	font family Calibri 
+	font height 80%
+	font width 150%
+	font tracking 25
+
+"my blog"
+
+	Regular 72pt
+
+
+
+"personal" "technical"
+
+	Light 60pt
+
+Measurements
+
+<--/use these measurements and scale everything accodingly (spreadsheet might help.--/
+
+Image
+	width	4586px	32.36cm
+	height	2835px	20   cm
+	resolution 360Px/inch
+	
+	baroque diagonal 5383.2741...px
+	angle 31.8
+Line 
+	width 7px
+
+	distance from top yellow line to middle yellowline
+		578.868724px
+
+	distance from middle to bottom yellow line
+		354.358575px
+
+	middle yellow line into box
+		257.79
+
+	bottom yellow line into box
+		914.89
+
+
+Circle
+	radius 425px
+
+rectangles
+	height	1504.1351...px
+	width	2438.7630...px
+	angle 31.8
+
+	distance from top yellow line to middle yellowline
+		578.868724px
+
+	distance from middle to bottom yellow line
+		354.358575px
+
+	middle yellow line into box
+		257.79
+
+	bottom yellow line into box
+		914.89
+
+	font alignment
+		left	344.08px
+		bottom	929.30px
+
+Breakpoint
+
+Overlflow hidden and center 
+first breakpoint at 3129px
+
+
+minimum viewport ratio 
+	1741 : 2839
+
+
+Small screen width 2829px (square)
+This is left aligned and the right hand side will move out of the screen.
+
+The left has a tiny amount of room to move.
+
+Mobile measurements:
+
+circles: 104px
+line width and colours are the same.
+
+distance between middle and bottomline colored line is the same.

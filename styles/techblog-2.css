@@ -1,0 +1,122 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    Font-family: Calibri;
+
+}
+body{
+    background-color: #eae9e9;
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    Font-size: 2.5em;
+    color: #6e6eaa;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+h2{
+    Font-size: 1.7em;
+    color: #6e6eaa;
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+}
+p{
+    font-size: 1.3em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+[class*="col-"] {
+    display: inline-block;
+    padding: 12px;
+    border: solid 1px red;
+  }
+    /* For mobile phones: */
+.col-1 {width: 100%;}
+.col-2 {width: 100%;}
+      
+@media only screen and (min-width: 768px) {
+        /* For desktop: */
+  .col-1 {width: 62%;}
+  .col-2 {width: 38%;}
+}
+  
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navlink {
+    float: left;
+  }
+  
+  .navlink a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navlink a:hover {
+    background-color: #111;
+  }
+
+  /*style example sets in column 2*/
+
+  .container{
+     background-color: white;
+     border: solid 2px #6e6eaa;
+     padding: 0;
+     display: flex;
+     overflow: hidden;
+ }
+  .column-elements{
+      min-height: 70px;
+      width: 33.3%;
+      margin: 10px;;
+      padding: 0px;
+      color: white;      
+  }
+  .mcol-1 {
+      background-color: red;
+  }
+  .mcol-2{
+      background-color: blue;
+  }
+  .mcol-3{
+      background-color: green;
+  }
+  .column-elements-2{
+    min-height: 60px;
+    width: 33.3%;
+    margin: 10px;
+    border: solid 3px black;
+    padding: 0px;
+    color: white;    
+}
+  .column-elements-3{
+    min-height: 60px;
+    width: 33.3%;
+    margin: 10px;
+    border: solid 3px black;
+    padding: 10px;
+    color: white; 
+}   
+
+.highlight{
+    background-color: yellow;
+}
