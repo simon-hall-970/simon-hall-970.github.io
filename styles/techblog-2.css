@@ -40,6 +40,7 @@ p{
     border: solid 1px red;
   }
   
+
   .col-1 {width: 62%;}
   .col-2 {width: 38%;}
   
@@ -66,3 +67,49 @@ p{
   .navlink a:hover {
     background-color: #111;
   }
+
+  /*style example sets in column 2*/
+
+  .container{
+     background-color: white;
+     border: solid 2px #6e6eaa;
+     padding: 0;
+     display: flex;
+     overflow: hidden;
+ }
+  .column-elements{
+      min-height: 70px;
+      width: 33.3%;
+      margin: 10px;;
+      padding: 0px;
+      color: white;      
+  }
+  .mcol-1 {
+      background-color: red;
+  }
+  .mcol-2{
+      background-color: blue;
+  }
+  .mcol-3{
+      background-color: green;
+  }
+  .column-elements-2{
+    min-height: 60px;
+    width: 33.3%;
+    margin: 10px;
+    border: solid 5px black;
+    padding: 0px;
+    color: white;    
+}
+  .column-elements-3{
+    min-height: 60px;
+    width: 33.3%;
+    margin: 10px;
+    border: solid 5px black;
+    padding: 10px;
+    color: white; 
+}   
+
+.highlight{
+    background-color: yellow;
+}
