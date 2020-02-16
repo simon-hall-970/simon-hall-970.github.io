@@ -37,8 +37,8 @@ body{
 }
 .tech-button{
     position: absolute;
-    top: 157px;
-    left: 869px;
+    top: 611px;
+    left: 613px;
     height: 116px;
     width: 116px;
     background-color: #762dad;
@@ -56,8 +56,8 @@ body{
 }
 .pers-button {
     position: absolute;
-    top: 512px;
-    left: 294px;
+    top: 610px;
+    left: -60px;
     height: 116px;
     width: 116px;
     background-color: #fff200;
@@ -174,15 +174,15 @@ h3{
 }
 .personal{
     position: absolute;
-    top: 584px;
-    left: 204px;
+    top: -28px;
+    left: 261px;
     color: #dddd1f;
     visibility: hidden;
 }
 .technical{
     position: absolute;
-    top: 516px;
-    left: 204px;
+    top: -95px;
+    left: -411px;
     color: #5f3380;
     visibility: hidden;
 }
@@ -190,8 +190,9 @@ h3{
     stop animation
     display appropriate text*/
 
-    .tech-button:hover ~ .technical{
-        visibility: visible;
-    }
-    .pers-button:hover ~ .personal{
-        visibility: hidden;}
+.tech-button:hover .technical{
+    visibility: visible;
+}
+.pers-button:hover .personal{
+    visibility: visible;
+}
