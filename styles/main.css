@@ -43,7 +43,6 @@ body{
     width: 116px;
     background-color: #762dad;
     border-radius: 50%;
-   /* comment out animnation while working and testing
    -webkit-animation-name: heartBeat;
     animation-name: heartBeat;
     -webkit-animation-duration: 3.9s;
@@ -52,7 +51,6 @@ body{
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    */
 }
 .pers-button {
     position: absolute;
@@ -62,19 +60,16 @@ body{
     width: 116px;
     background-color: #fff200;
     border-radius: 50%;
-    /*comment out animation while working and testing
     -webkit-animation-name: heartBeat;
     animation-name: heartBeat;
     -webkit-animation-delay: 1.3s;
     animation-delay: 1.95s; /* delay by half duration to have the two buttons pulsing at opposite times*/
-    /*comment out animation while working and testing
     -webkit-animation-duration: 3.9s;
      animation-duration: 3.9;
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    */
 }
 /*add animation to tech button to grab attention
     
@@ -178,6 +173,8 @@ h3{
     left: 261px;
     color: #dddd1f;
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.3s;
 }
 .technical{
     position: absolute;
@@ -185,14 +182,25 @@ h3{
     left: -411px;
     color: #5f3380;
     visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.3s;
 }
 /*hover over buttons.
     stop animation
     display appropriate text*/
 
+.tech-button:hover{
+    animation: step-end;
+}
 .tech-button:hover .technical{
     visibility: visible;
+    opacity: 100;
+}
+
+.pers-button:hover{
+    animation: step-end;
 }
 .pers-button:hover .personal{
     visibility: visible;
+    opacity: 100;
 }
