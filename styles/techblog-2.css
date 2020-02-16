@@ -16,6 +16,7 @@ body{
 }
 section{
     display: flex;
+    flex-wrap: wrap;
 }
 h1{
     Font-size: 2.5em;
@@ -26,7 +27,7 @@ h1{
 h2{
     Font-size: 1.7em;
     color: #6e6eaa;
-    margin-top: none;
+    margin-top: 0px;
     margin-bottom: 0.5em;
 }
 p{
@@ -34,15 +35,21 @@ p{
     margin-top: 0.4em;
     margin-bottom: 0.4em;
 }
+
 [class*="col-"] {
     display: inline-block;
     padding: 12px;
     border: solid 1px red;
   }
-  
-
+    /* For mobile phones: */
+.col-1 {width: 100%;}
+.col-2 {width: 100%;}
+      
+@media only screen and (min-width: 768px) {
+        /* For desktop: */
   .col-1 {width: 62%;}
   .col-2 {width: 38%;}
+}
   
   .nav {
     list-style-type: none;
