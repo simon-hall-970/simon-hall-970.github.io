@@ -12,7 +12,7 @@
 body{
     background-color: #eae9e9;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 section{
     display: flex;
@@ -35,22 +35,9 @@ p{
     margin-top: 0.4em;
     margin-bottom: 0.4em;
 }
-
-[class*="col-"] {
-    display: inline-block;
-    padding: 12px;
-  }
-    /* For mobile phones: */
-.col-1 {width: 100%;}
-.col-2 {width: 100%;}
-      
-@media only screen and (min-width: 768px) {
-        /* For desktop: */
-  .col-1 {width: 62%;}
-  .col-2 {width: 38%;}
+article{
+    padding: 2em;
 }
-  /* NAVIGATION BAR*/
-
   
   .menu {
     margin: 0;
