@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Boxes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/techblog-2.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <Nav class="menu">
+            <ol>
+                <li class="navlink"><a href="../index.html">Home</a></li>
+                 <li class="navlink"><a href="#0">Technological</a>                
+                    <ol class="submenu">
+                        <li class="navlink"><a href="techblog-2.html">Sprint 2</a></li>
+                </ol></li>
+                 <li class="navlink"><a href="#0">Personal</a>
+                    <ol class="submenu">
+                        <li class="navlink"><a href="sprint1-cultural.html">Sprint 1</a></li>
+                        <li class="navlink"><a href="sprint2-cultural.html">Sprint 2</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </Nav>
+       <article>
+       <section class="intro">
+           <div class="col-1">
+               <h1>Margin, padding, and borders</h1>
+                <span></span><strong>Technical blog - sprint 2</strong><br>Sunday 16 February 2020<br><em>by Simon Hall</em></span>             
+                
+                <p><br>The margin, border, and padding properties determine the space between elements in the natural flow of the page as well as the placement of content within an element.</p>
+           
+                <p>This post looks at these properties of an element and the affect they have on the style of a web page.
+                </p>
+            </div>
+           <div class="col-2"></div>
+
+       </section>
+       <section class="sect-content">
+           <div class="col-1">
+               <h2>Margin</h2>
+               <p>Margin is a property of an element that determines its outside space.  It sets a cushion of space between the elements boundary and other elements outside of it.</p>
+
+               <p>The margin area set will be respected by elements that have block or inline-block display properties. An element that has an inline display property does not respect the margin.</p>
+
+               <p>One way to think of a margin is to think of buildings on a property as elements. Let's say you have a property with a house on it.  The property boundary would be your margin.</p>
+               
+               <p>A stranger wanting to put up a new structure would be like a block or inline block type element. They would have to respect your property lines and build outside them.</p>
+
+               <p>On the other if you wanted to build a garage or studio, then you would build it within the property area. This would be more like and inline display setting</p>
+               
+           </div>
+           <div class="col-2">
+               <div class="container">
+                   <div class="column-elements mcol-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                   <div class="column-elements mcol-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                   <div class="column-elements mcol-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+               </div>
+               <div class="note">The above three column elements have a margin of 10px. Note how they push away from each other and from the edges of the container box. (Note the container box has no padding set.</div>
+               <div class="note">The columns also have no padding. Notice how the text is hard against he top left of each column.</div>
+               <pre><code>  
+             .container
+                {background-color: white;
+                border: solid 2px #6e6eaa;
+                padding: 0;
+                display: flex;}
+            
+             .column-elements
+                 {height: 60px;
+                 width: 33.3%;
+                 <span class="highlight">margin: 10px;</span>
+                 padding: 0px}</code></pre>
+           </div>
+
+       </section>
+       
+       <section class="sect-Bord">
+            <div class="col-1">
+            <h2>Border</h2>
+               <p>The border is quite simply the boundary of an element. It defines the edges of the element itself.</p>
+
+               <p>Let's look back at our house analogy. If the house were an element, then the border would the house's outside walls and cladding.</p>                    
+               
+               <p>The border properties allow control over the width, color, and style of the border.</p>
+               
+            </div>
+
+            <div class="col-2">
+                <div class="container">
+                    <div class="column-elements-2 mcol-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="column-elements-2 mcol-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="column-elements-2 mcol-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+                <div class="note">In this example the same settings have been used but the columns each now have a 2px black border.</div>
+                <pre><code>  
+              .container
+                 {background-color: white;
+                 border: solid 2px #6e6eaa;
+                 padding: 0;
+                 display: flex;}
+             
+              .column-elements
+                  {height: 60px;
+                  width: 33.3%;
+                  margin: 10px;
+                  <span class="highlight">border: solid 2px black;</span>
+                  padding: 0px}</code></pre>
+            </div>
+        </section>
+        
+        <section class="sect-Pad">
+            <div class="col-1">
+                <h2>Padding</h2>
+                <p>The padding is the property that sets the space between the border and any content (including other elements) that live inside it.</p>
+
+                <p>To understand padding think of an elevator. The elevator is the element. When one person hops inside an elevator it's not likely they will stand hard up against the wall of the elevator. Most likely they will stand somewhere near the middle.</p>
+
+                <p>This space betwen them and the elevator walls could be considered the elevator's padding. If at the next floor 12 more people got into the elevator then the padding would be reduced as the content of the elevator would now be squashed right up agains the walls.</p>
+            </div>
+            <div class="col-2">
+                <div class="container">
+                    <div class="column-elements-3 mcol-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="column-elements-3 mcol-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="column-elements-3 mcol-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                </div>
+                <div class="note">In this example the same settings have been used again but this time each column now has padding added to it. Notice how the text has some breathing space between it and the element's border.</div>
+                <pre><code>  
+              .container
+                 {background-color: white;
+                 border: solid 2px #6e6eaa;
+                 padding: 0;
+                 display: flex;}
+             
+              .column-elements
+                  {height: 60px;
+                  width: 33.3%;
+                  margin: 10px;
+                  border: solid 2px black;
+                  <span class="highlight">padding: 10px}</span></code></pre>
+            </div>
+        </section>
+        </article>
+    </body>
+</html>
+
