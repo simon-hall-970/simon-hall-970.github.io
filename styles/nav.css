@@ -1,0 +1,62 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*{
+    Font-family: Calibri;
+
+}
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+  /* NAVIGATION BAR*/
+
+  
+.menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+.navlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+.top a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-left: 1px solid #272727;
+    background-color: #353535;
+    margin-right: 3px;
+  }
+
+    .bottom a{
+        float: left;
+        display: none;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-left: 1px solid #272727;
+        background-color: #353535;
+        margin-right: 2px;
+  }
+  
+  .top a:hover {
+    background-color: #111;
+  }
+/*all works well to here. How to make the .bottom a appear when .top a:hover*/
+
+.top a:hover ~ .navlist .bottom a{
+    display: block;
+}
