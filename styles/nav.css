@@ -9,8 +9,10 @@
     Font-family: Calibri;
 
 }
+
+
 body{
-    background-color: whitesmoke;
+    background-color: #eae9e9;
     margin: 0;
     padding: 0;
 }
@@ -35,11 +37,17 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-left: 1px solid #272727;
-    background-color: #353535;
-    margin-right: 3px;
+    margin-right: 0;
   }
 
+.tech {
+  border-left: 1px solid #272727;
+  background-color: #353535;
+}
+.personal{
+  border-left: 1px solid #272727;
+  background-color: #353535;
+}
     .bottom a{
         float: left;
         display: none;
@@ -49,7 +57,7 @@ body{
         text-decoration: none;
         border-left: 1px solid #272727;
         background-color: #353535;
-        margin-right: 2px;
+        margin-right: 0;
   }
   
   .top a:hover {
@@ -59,4 +67,9 @@ body{
 
 .top a:hover ~ .navlist .bottom a{
     display: block;
+}
+
+.navlist .bottom a:hover ~ a {
+  display: block;
+  background-color: #111;
 }
