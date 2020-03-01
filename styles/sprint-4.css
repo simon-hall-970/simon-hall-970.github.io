@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    border: 5px solid blue;
+    position: relative;
+
+}
+nav * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button-sub {
+    display:none;
+}
+
+.container:hover .button-sub {
+    display: block;
+}
